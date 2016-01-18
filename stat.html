@@ -268,7 +268,9 @@ print_todays_date();
             getGrownRate(strikeRates).toFixed(2),
             { postfix: '%', inverse: false });
 
-          setPreviewValues(pendings[pendings.length - 1] - activations[activations.length - 1]).toFixed(2),
+          setPreviewValues('pendings',
+             registrationsSum - activationsSum,
+             getGrownRate(pendings).toFixed(2),
             { postfix: ' чел', inverse: true });
 
           setPreviewValues('failures',
