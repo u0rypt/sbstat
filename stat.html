@@ -26,6 +26,13 @@
       .infoModule > .desc .dynamic.down:after { content: ' \2198'; }
       .infoModule > .graph { float: right; }
     </style>
+    <script language="JavaScript">
+// Определяем функцию для дальнейшего использования
+function print_todays_date() {
+var d = new Date(); // Получаем текущие дату и время
+document.write(d.toLocaleString()); // Вставляем это в документ
+}
+</script>
     <script>
       /*!
        * Chart.js
@@ -50,7 +57,10 @@
   <body>
     <header>
       <h1>Личный кабинет заемщика</h1>
-      <time>15/01/2016</time>
+      <time><script language="JavaScript">
+// Теперь вызываем определенную ранее функцию
+print_todays_date();
+</script></time>
     </header>
 
     <main>
