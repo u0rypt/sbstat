@@ -207,7 +207,7 @@
         })
       };
 
-      fetch('https://dl.dropboxusercontent.com/u/50679150/sberstat/chart.csv')
+      fetch('http://u0rypt.github.io/sbstat/chart.csv')
         .then(function(res) {
           const result = Papa.parse(res);
           const data = result.data;
