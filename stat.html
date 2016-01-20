@@ -274,7 +274,7 @@ print_todays_date();
             { postfix: ' чел', inverse: true });
 
           setPreviewValues('failures',
-            failures.reduce((prev, curr) => (prev + curr), 0),
+            failures.reduce((prev, curr) => (curr), 0),
             getGrownRate(failures).toFixed(2),
             { postfix: ' чел', inverse: true });
 
